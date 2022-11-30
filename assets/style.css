@@ -22,18 +22,56 @@ img{
 
 }
 
-
+.cabezera{
+	position: relative;
+}
 
 .contenedor{
 	background-color: var(--moreblue);
 	margin: auto;
-	max-width: 1000px;
-
+	
 }
 
 #btn-menu{
 	display: none;
 }
+
+#btn-menu:checked  .barnav{
+	left: 1rem;
+
+} 
+
+
+.barnav{
+	height: 70px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-weight: 400;
+	padding: 3rem;
+	position: relative;
+	background-color: var(--darkblue);
+	width: 25%;
+	height: calc(70vh - 70px);
+	position: absolute;
+	right: 0;
+	top: 3rem;
+	border-radius: 1rem 0 1rem 1rem ;
+
+}
+.lista_menu{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	top: 2rem ;
+	padding: 0.5rem;
+	right: 10%;
+	bottom: 2rem;
+	align-items: center;
+
+}
+
 
 .barnav{
 	display: none;
@@ -160,7 +198,7 @@ img{
 
 .cuadro{
 	background-color: var(--white);
-	padding: 4px 20px;	
+
 	width: 45px;
 	height: 45px;
 	border-radius: 10%;
@@ -170,6 +208,7 @@ img{
 
 	
 }
+
 
 
 .acerca_de_mi h2{
@@ -202,59 +241,89 @@ a{
 .home{
 	color: var(--turqueza);
 }
-h3{
+
+.contenedor_info > h3{
+	
 	color: black;
 }
 
 .deh3{
+	margin-top: 8rem;
 	color: black;
+}
+.tituloServicios{
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .servicios{
-	width: 100%;
-	height: 800px;
+	display: flex;
+	justify-content: center;
 
-	background-color: orange;
 }
 
 .servicios > h2{
 	padding: 1rem;
+	
 }
 
 .contenedor_conocimientos{
-	background-color: blue;
+
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	text-align: center;
+	gap: 2rem;
 
 }
 
 
 .conocimientos{
-	padding: 3rem 1rem;
-	height: 400px;
-	background-color: red;
 	display: flex;
-	position: relative;
+	flex-direction: column;
+	justify-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 330px;
+	display: flex;
+	border-radius: 3%;
+	background-color: white;
 
 }
 
 .contenedor_vector{
+	position: relative;
+}
+
+.vector {
 	position: absolute;
-	top: 0;
-	left: 0;
-	text-align: center;
-	width: 100%;
+	bottom: -5rem;
+	border-radius: 12%;
 
 }
 
 .contenedor_info{
-	position: relative;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	top: 0;
 	left: 0;
 	text-align: center;
+	position: relative;
+	
+}
+
+.logo_conocimiento{
+	position: absolute;
+	bottom: 6.5rem;
+
+}
+
+.titulo_experiencia{
+	position: absolute;
+	bottom: 3rem;
+	padding: 1rem 0;
+
 }
 
 
@@ -268,18 +337,22 @@ h3{
 		font-weight: 400;
 		margin-bottom: 2rem;
 		position: relative;
-
-
+		top: -1rem;
+		left: 70rem;
+		z-index: 4;
+		background-color: var(--moreblue);
 
 
 	}
 	.lista_menu{
 		position: absolute;
 		display: flex;
-		gap: 5rem;
+		flex-direction: row;
+		gap: 4rem;
 		padding-left: 1rem;
 		right: 7%;
 		bottom: 2rem;
+
 
 	}
 
@@ -311,14 +384,14 @@ h3{
 	.barrita{
 		position: absolute;
 		left: 5%;
-		top: 32%;
+		top: 37.5%;
 		
 	}
 
 	.cargo{
 		position: absolute;
 		left: 50px;
-		bottom: 480px;
+		bottom: 450px;
 
 	}
 
@@ -333,21 +406,21 @@ h3{
 		left: 50px;
 		margin-top: 5rem;
 		margin-bottom: 2rem;
-		width: 450px;
-		height: 10px;
+		width: 350px;
+		height: 20px;
 	}
 	.circule{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 1.5rem;
+		padding: 1rem;
 		width: 100px;
 		height: 50px;
 	}
 
 	article > img{
-		width: 100px;
-		height: 50px;
+		width: 150px;
+		height: 80px;
 	}
 
 
@@ -378,5 +451,7 @@ h3{
 		padding: 2rem;
 		margin: auto;
 	}
+
+
 
 }
