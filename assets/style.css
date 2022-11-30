@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+	--turqueza: #34B0BE;
+	--plomo: #D1CECA;
+	--darkblue:#242635;
+	--white:#ffffff;
+	--moreblue: #0a0714;
+}
+
+*{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0; 
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+
+}
+
+
+
+.contenedor{
+	background-color: var(--moreblue);
+	margin: auto;
+	max-width: 1000px;
+
+}
+
+#btn-menu{
+	display: none;
+}
+
+.barnav{
+	display: none;
+}
+
+
+.nav-menu path{
+	stroke: white;
+}
+
+.menu_hamburguesa{
+	display: flex;
+	justify-content: flex-end;	
+	align-items: center;
+	height: 50px;
+	padding: 0.5rem 1rem;
+}
+
+
+
+
+.descript{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.perfil_contenedor{
+	
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-color: var(--darkblue);
+	border-radius: 50%;
+	padding: 0.35rem 1.5rem 0.1rem;
+	
+}
+
+.perfil{
+	display: block;
+	margin-top: 2rem;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	
+}
+
+.name{
+	padding: 3rem 0 0;
+	text-align: center;
+}
+
+
+.name h1{
+	color: var(--turqueza);
+	font-size:3rem ;
+}
+
+.name span{
+	padding: 1rem;
+	color: var(--white);
+	font-size:2rem ;
+	font-weight: 400;
+}
+
+.barrita{
+	margin-top: 8px;
+	width: 320px;
+	height: 4px;
+	background-color: #fff;
+	margin-bottom: 18px;
+}
+
+.cargo{
+	text-align: center;
+
+
+}
+
+.cargo h3{	
+	font-weight: 400;
+}
+
+.cargo p {	
+	color: var(--white);
+	margin: 2rem 0;
+}
+
+.cargo span {	
+	font-weight: 700;
+	color: var(--turqueza)
+}
+
+.redes{
+	
+	display: flex;
+	gap: 3rem;
+	margin-bottom: 2rem;
+
+
+}
+.circule{
+	background-color: white;
+	border-radius: 50%;
+	padding: 0.5rem;
+
+}
+
+.empresas{
+	padding: 1rem;
+	background-color: var(--darkblue);
+	border-radius: 10%;
+	width: 320px;
+	display: flex;
+	justify-content:center;
+	gap: 2rem;
+	align-items: center;
+	margin-bottom: 40px;
+
+}
+
+.cuadro{
+	background-color: var(--white);
+	padding: 4px 20px;	
+	width: 45px;
+	height: 45px;
+	border-radius: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+
+
+.acerca_de_mi h2{
+	font-size: 2.2rem;
+	color: var(--turqueza);
+}
+
+.acerca_de_mi{
+	text-align: center;
+	align-items: center;
+	width: 350px;
+	margin: auto;		 	
+}
+
+.acerca_de_mi p{
+	font-size: 1rem;
+	color: white;
+	font-weight: 400;
+	line-height:1.5rem ;
+	margin-bottom: 40px;
+}
+li{
+	list-style: none;
+	
+}
+a{
+	text-decoration: none;
+}
+
+.home{
+	color: var(--turqueza);
+}
+h3{
+	color: black;
+}
+
+.deh3{
+	color: black;
+}
+
+.servicios{
+	width: 100%;
+	height: 800px;
+
+	background-color: orange;
+}
+
+.servicios > h2{
+	padding: 1rem;
+}
+
+.contenedor_conocimientos{
+	background-color: blue;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+
+}
+
+
+.conocimientos{
+	padding: 3rem 1rem;
+	height: 400px;
+	background-color: red;
+	display: flex;
+	position: relative;
+
+}
+
+.contenedor_vector{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+
+}
+
+.contenedor_info{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+
+@media (min-width: 600px) {
+
+	.barnav{
+		height: 70px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-weight: 400;
+		margin-bottom: 2rem;
+		position: relative;
+
+
+
+
+	}
+	.lista_menu{
+		position: absolute;
+		display: flex;
+		gap: 5rem;
+		padding-left: 1rem;
+		right: 7%;
+		bottom: 2rem;
+
+	}
+
+
+	.menu{
+		display: none;
+	}
+
+	header{
+		position: relative;
+	}
+
+
+	.name{
+		position: absolute;
+		width: 500px;
+		height: 300px;
+		left: -2%;
+		bottom: 47%;
+		
+
+	}
+
+	.cargo{
+		position: absolute;
+		left: 8%;
+		bottom: 5%;
+	}
+	.barrita{
+		position: absolute;
+		left: 5%;
+		top: 32%;
+		
+	}
+
+	.cargo{
+		position: absolute;
+		left: 50px;
+		bottom: 480px;
+
+	}
+
+	.perfil{
+		width: 650px;
+		height: 650px;
+	}
+
+	.redes{
+		position: absolute;
+		display: flex;
+		left: 50px;
+		margin-top: 5rem;
+		margin-bottom: 2rem;
+		width: 450px;
+		height: 10px;
+	}
+	.circule{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1.5rem;
+		width: 100px;
+		height: 50px;
+	}
+
+	article > img{
+		width: 100px;
+		height: 50px;
+	}
+
+
+	.empresas{
+
+		width: 75%;
+		height: 150px;
+		border-radius: 5%;
+	}
+
+	.cuadro{
+		width: 200px ;
+		height: 80%;
+		display: flex;
+		margin: 2rem;
+		
+
+	}
+
+	.acerca_de_mi{
+		width: 70%;
+		height: 100 %;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+		margin: auto;
+	}
+
+}
